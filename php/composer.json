@@ -1,0 +1,19 @@
+{
+    "name": "yuherus/autoload",
+    "description": "Autoload",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yuherusdev",
+            "email": "tuanhuy03ns@gmail.com"
+        }
+    ],
+    "require": {
+        "ramsey/uuid": "^4.7"
+    }
+}
