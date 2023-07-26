@@ -103,7 +103,7 @@ closureFunction2();
 closureFunction2();
 
 // EcmaScript 6
-// 1. Arrow function
+// 1. Let const
 // Biến được khai báo bằng 'let' có phạm vi block
 function demoLet() {
     if (true) {
@@ -187,7 +187,7 @@ class Person6 {
     }
   }
   
-  const john = new Person('Tuan', 'Huy');
+  const john = new Person6('Tuan', 'Huy');
   console.log(john.fullName()); 
   
 // 10. Modules
@@ -196,10 +196,10 @@ console.log(firstName6 + ' ' + lastName6); // Output: John Doe
 
 // Arrow Function
 // 1. Không cần dùng từ khóa function
-const sayHello = (name) => {
+const sayHello2 = (name) => {
     console.log(`Hello ${name} !`);
 };
-sayHello('Huy');
+sayHello2('Huy');
 // 2. Không cần dùng từ khóa return
 const sum = (a, b) => a + b;
 console.log(sum(2, 6));
@@ -208,11 +208,61 @@ const square = x => x * x;
 console.log(square(2));
 
 // Promise
+// Hàm tải dữ liệu từ API bằng cách sử dụng Promise
+function getUsersFromApi() {
+  const apiUrl = 'https://jsonplaceholder.typicode.com/users';
+
+  // Tạo Promise
+  return new Promise((resolve, reject) => {
+    fetch(apiUrl)
+      .then(response => {
+        // Kiểm tra trạng thái của response
+        if (!response.ok) {
+          // Nếu request không thành công, reject với thông báo lỗi
+          reject('Failed to fetch users');
+        }
+        // Chuyển đổi dữ liệu thành JSON và resolve với kết quả
+        return response.json();
+      })
+      .then(data => {
+        // Kết quả thành công, resolve với danh sách người dùng
+        resolve(data);
+      })
+      .catch(error => {
+        // Xử lý lỗi trong quá trình fetch hoặc chuyển đổi JSON
+        reject('Error while fetching users: ' + error);
+      });
+  });
+}
+
+// Sử dụng hàm getUsersFromApi
+getUsersFromApi()
+  .then(users => {
+    // Xử lý danh sách người dùng
+    console.log('User list:', users);
+  })
+  .catch(error => {
+    // Xử lý lỗi
+    console.error(error);
+  });
 
 
 // Async/Await
 
+async function getUsersFromApi2() {
+  const apiUrl = 'https://jsonplaceholder.typicode.com/users';
 
+  const response = await fetch(apiUrl);
+  if (!response.ok) {
+    throw new Error('Failed to fetch users');
+  }
+
+  const data = await response.json();
+  return data;
+}
+
+const users = getUsersFromApi2()
+console.log(users);
 
 
 
