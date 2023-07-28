@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Laravel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/php/vendor/brick/math" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/php/vendor/ramsey/collection" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/php/vendor/ramsey/uuid" vcs="Git" />
   </component>
 </project>
