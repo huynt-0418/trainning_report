@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72572542-6885-4c8e-baf5-2c8b5427d01f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TrainningReport.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TrainningReport.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel/routes/web.php" afterDir="false" />
@@ -191,7 +187,7 @@
       <workItem from="1690514102204" duration="170000" />
       <workItem from="1690514284229" duration="49000" />
       <workItem from="1690524807312" duration="1230000" />
-      <workItem from="1690526068838" duration="6046000" />
+      <workItem from="1690526068838" duration="6343000" />
     </task>
     <servers />
   </component>
